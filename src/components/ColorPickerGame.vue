@@ -1,9 +1,9 @@
 <template>
   <h1>Color Picker Game</h1>
 
-  <div>{{ message }}</div>
+  <div>{{ msg }}</div>
 
-  <button v-for="color in colors" :key="color" @click="matchColor(color)">
+  <button v-for="color in colors" :key="color" @click="colorMatch(color)">
     {{ color }}
   </button>
 </template>
